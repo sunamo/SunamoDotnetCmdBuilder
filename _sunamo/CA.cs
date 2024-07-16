@@ -1,4 +1,4 @@
-//namespace SunamoDotnetCmdBuilder._sunamo.SunamoExceptions._AddedToAllCsproj;
+namespace SunamoDotnetCmdBuilder._sunamo;
 
 internal class CA
 {
