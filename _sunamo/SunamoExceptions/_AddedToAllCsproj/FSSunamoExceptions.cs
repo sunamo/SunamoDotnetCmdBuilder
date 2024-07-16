@@ -1,5 +1,7 @@
-namespace SunamoDotnetCmdBuilder._sunamo.SunamoExceptions._AddedToAllCsproj;
-internal class FSSunamoExceptions
+//namespace SunamoDotnetCmdBuilder._sunamo.SunamoExceptions._AddedToAllCsproj;
+
+//namespace SunamoDotnetCmdBuilder._sunamo.SunamoExceptions._AddedToAllCsproj;
+internal class FS
 {
     internal static void CreateUpfoldersPsysicallyUnlessThere(string nad)
     {
