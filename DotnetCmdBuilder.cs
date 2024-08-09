@@ -2,7 +2,7 @@ namespace SunamoDotnetCmdBuilder;
 
 public class DotnetCmdBuilder
 {
-    StringBuilder sb = new StringBuilder();
+    private readonly StringBuilder sb = new();
 
     public void Cd(string path)
     {
