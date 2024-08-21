@@ -9,3 +9,5 @@ global using SunamoDotnetCmdBuilder._sunamo.SunamoValues;
 global using SunamoDotnetCmdBuilder._sunamo.SunamoExceptions.OnlyInSE;
 global using System.Diagnostics;
 global using System.Net;
+global using SunamoDotnetCmdBuilder;
+global using SunamoDotnetCmdBuilder._sunamo;
