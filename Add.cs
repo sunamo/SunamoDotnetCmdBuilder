@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-internal class Add(StringBuilder sb)
+public class Add(StringBuilder sb)
 {
     public void AddPackage(string projectPathOrName, string packageName)
     {

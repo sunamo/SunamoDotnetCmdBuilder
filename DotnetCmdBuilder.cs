@@ -3,13 +3,14 @@ namespace SunamoDotnetCmdBuilder;
 public class DotnetCmdBuilder
 {
     private readonly StringBuilder sb = new();
-    Sln sln { get; set; } = null;
-    Add add { get; set; } = null;
+    public Sln Sln { get; set; } = null;
+    public Add Add { get; set; } = null;
+    public Nuget Nuget { get; set; } = null;
 
     public DotnetCmdBuilder()
     {
-        sln = new Sln(sb);
-        add = new Add(sb);
+        Sln = new Sln(sb);
+        Add = new Add(sb);
     }
 
     public void Cd(string path)

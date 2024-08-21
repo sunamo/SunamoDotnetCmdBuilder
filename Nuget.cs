@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-internal class Nuget(StringBuilder sb)
+public class Nuget(StringBuilder sb)
 {
     public void Push(string args)
     {

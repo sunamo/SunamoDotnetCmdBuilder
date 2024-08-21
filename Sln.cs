@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-internal class Sln(StringBuilder sb)
+public class Sln(StringBuilder sb)
 {
     public void Remove(string slnFile, string projectPath)
     {
