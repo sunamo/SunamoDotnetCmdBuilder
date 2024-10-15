@@ -1,4 +1,3 @@
-
 namespace SunamoDotnetCmdBuilder;
 public class DotnetCmdBuilder
 {
