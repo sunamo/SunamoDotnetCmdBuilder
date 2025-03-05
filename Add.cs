@@ -1,5 +1,4 @@
 namespace SunamoDotnetCmdBuilder;
-using System.Text;
 
 public class Add(StringBuilder sb)
 {

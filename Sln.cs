@@ -1,5 +1,4 @@
 namespace SunamoDotnetCmdBuilder;
-using System.Text;
 
 public class Sln(StringBuilder sb)
 {
@@ -7,7 +6,6 @@ public class Sln(StringBuilder sb)
     {
         sb.AppendLine($"dotnet sln {slnFile} remove {projectPath}");
     }
-
     /// <summary>
     /// slnPath can be "" when running in folder where is only one sln
     /// </summary>
