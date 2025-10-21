@@ -1,20 +1,23 @@
+// EN: Variable names have been checked and replaced with self-descriptive names
+// CZ: Názvy proměnných byly zkontrolovány a nahrazeny samopopisnými názvy
+
 namespace SunamoDotnetCmdBuilder;
 public class DotnetCmdBuilder
 {
-    private readonly StringBuilder sb = new();
+    private readonly StringBuilder stringBuilder = new();
     public Sln Sln { get; set; } = null;
     public Add Add { get; set; } = null;
     public Nuget Nuget { get; set; } = null;
 
     public DotnetCmdBuilder()
     {
-        Sln = new Sln(sb);
-        Add = new Add(sb);
+        Sln = new Sln(stringBuilder);
+        Add = new Add(stringBuilder);
     }
 
     public void Cd(string path)
     {
-        sb.AppendLine("cd " + path);
+        stringBuilder.AppendLine("cd " + path);
     }
 
     public void Clean()
@@ -29,16 +32,16 @@ public class DotnetCmdBuilder
 
     private void Prefix(string v)
     {
-        sb.AppendLine("dotnet " + v);
+        stringBuilder.AppendLine("dotnet " + v);
     }
 
     public void Build(string args)
     {
-        sb.AppendLine("dotnet build " + args);
+        stringBuilder.AppendLine("dotnet build " + args);
     }
 
     public override string ToString()
     {
-        return sb.ToString();
+        return stringBuilder.ToString();
     }
 }
