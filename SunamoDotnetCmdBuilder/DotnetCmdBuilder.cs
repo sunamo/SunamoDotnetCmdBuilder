@@ -3,14 +3,15 @@ namespace SunamoDotnetCmdBuilder;
 public class DotnetCmdBuilder
 {
     private readonly StringBuilder stringBuilder = new();
-    public Sln Sln { get; set; } = null;
-    public Add Add { get; set; } = null;
-    public Nuget Nuget { get; set; } = null;
+    public Sln Sln { get; set; }
+    public Add Add { get; set; }
+    public Nuget Nuget { get; set; }
 
     public DotnetCmdBuilder()
     {
         Sln = new Sln(stringBuilder);
         Add = new Add(stringBuilder);
+        Nuget = new Nuget(stringBuilder);
     }
 
     public void Cd(string path)
@@ -33,9 +34,9 @@ public class DotnetCmdBuilder
         stringBuilder.AppendLine("dotnet " + command);
     }
 
-    public void Build(string args)
+    public void Build(string arguments)
     {
-        stringBuilder.AppendLine("dotnet build " + args);
+        stringBuilder.AppendLine("dotnet build " + arguments);
     }
 
     public override string ToString()
