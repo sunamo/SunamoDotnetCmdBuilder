@@ -1,9 +1,9 @@
 namespace SunamoDotnetCmdBuilder;
 
-public class Add(StringBuilder sb)
+public class Add(StringBuilder stringBuilder)
 {
     public void AddPackage(string projectPathOrName, string packageName)
     {
-        sb.AppendLine($"dotnet add {projectPathOrName} package {packageName}");
+        stringBuilder.AppendLine($"dotnet add {projectPathOrName} package {packageName}");
     }
 }

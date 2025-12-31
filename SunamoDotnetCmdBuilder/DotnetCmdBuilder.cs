@@ -28,9 +28,9 @@ public class DotnetCmdBuilder
         Prefix("pack");
     }
 
-    private void Prefix(string v)
+    private void Prefix(string command)
     {
-        stringBuilder.AppendLine("dotnet " + v);
+        stringBuilder.AppendLine("dotnet " + command);
     }
 
     public void Build(string args)

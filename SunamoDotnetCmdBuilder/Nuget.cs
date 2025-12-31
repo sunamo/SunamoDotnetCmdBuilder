@@ -1,9 +1,9 @@
 namespace SunamoDotnetCmdBuilder;
 
-public class Nuget(StringBuilder sb)
+public class Nuget(StringBuilder stringBuilder)
 {
     public void Push(string args)
     {
-        sb.AppendLine("dotnet nuget push " + args);
+        stringBuilder.AppendLine("dotnet nuget push " + args);
     }
 }

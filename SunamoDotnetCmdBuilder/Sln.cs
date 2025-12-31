@@ -1,10 +1,10 @@
 namespace SunamoDotnetCmdBuilder;
 
-public class Sln(StringBuilder sb)
+public class Sln(StringBuilder stringBuilder)
 {
     public void Remove(string slnFile, string projectPath)
     {
-        sb.AppendLine($"dotnet sln {slnFile} remove {projectPath}");
+        stringBuilder.AppendLine($"dotnet sln {slnFile} remove {projectPath}");
     }
     /// <summary>
     /// slnPath can be "" when running in folder where is only one sln
@@ -13,6 +13,6 @@ public class Sln(StringBuilder sb)
     /// <param name="csprojRelativePath"></param>
     public void AddProject(string slnPath, string csprojRelativePath)
     {
-        sb.AppendLine($"dotnet sln {slnPath} add {csprojRelativePath}");
+        stringBuilder.AppendLine($"dotnet sln {slnPath} add {csprojRelativePath}");
     }
 }
