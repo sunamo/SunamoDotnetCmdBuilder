@@ -1,3 +1,5 @@
+// EN: Global using directives for SunamoDotnetCmdBuilder library
+// CZ: Globální using direktivy pro knihovnu SunamoDotnetCmdBuilder
 global using System;
 global using System.Linq;
 global using System.Text;

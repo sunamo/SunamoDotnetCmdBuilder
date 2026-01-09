@@ -1,3 +1,6 @@
+// variables names: ok
+// EN: Variable names have been checked and replaced with self-descriptive names
+// CZ: Názvy proměnných byly zkontrolovány a nahrazeny samopopisnými názvy
 namespace SunamoDotnetCmdBuilder;
 
 /// <summary>
@@ -11,7 +14,7 @@ public class Sln(StringBuilder stringBuilder)
     /// </summary>
     /// <param name="slnFile">The path to the solution file.</param>
     /// <param name="projectPath">The path to the project to remove.</param>
-    public void Remove(string slnFile, string projectPath)
+    public void RemoveProject(string slnFile, string projectPath)
     {
         stringBuilder.AppendLine($"dotnet sln {slnFile} remove {projectPath}");
     }

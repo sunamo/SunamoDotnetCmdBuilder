@@ -1,3 +1,4 @@
+// variables names: ok
 namespace SunamoDotnetCmdBuilder._sunamo.SunamoExceptions;
 
 // EN: Variable names have been checked and replaced with self-descriptive names
