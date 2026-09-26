@@ -12,6 +12,6 @@ public class Nuget(StringBuilder stringBuilder)
     /// <param name="arguments">The arguments to pass to the push command (e.g., package path, source, API key).</param>
     public void Push(string arguments)
     {
-        stringBuilder.AppendLine("dotnet nuget push " + arguments);
+        stringBuilder.AppendLine($"dotnet nuget push {arguments}");
     }
 }

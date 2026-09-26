@@ -38,7 +38,7 @@ public class DotnetCmdBuilder
     /// <param name="path">The path to change to.</param>
     public void Cd(string path)
     {
-        stringBuilder.AppendLine("cd " + path);
+        stringBuilder.AppendLine($"cd {path}");
     }
 
     /// <summary>
@@ -63,7 +63,7 @@ public class DotnetCmdBuilder
     /// <param name="command">The command name to append after "dotnet ".</param>
     private void Prefix(string command)
     {
-        stringBuilder.AppendLine("dotnet " + command);
+        stringBuilder.AppendLine($"dotnet {command}");
     }
 
     /// <summary>
@@ -72,7 +72,7 @@ public class DotnetCmdBuilder
     /// <param name="arguments">The arguments to pass to the build command.</param>
     public void Build(string arguments)
     {
-        stringBuilder.AppendLine("dotnet build " + arguments);
+        stringBuilder.AppendLine($"dotnet build {arguments}");
     }
 
     /// <summary>
