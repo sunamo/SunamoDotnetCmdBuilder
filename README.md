@@ -1,5 +1,10 @@
 # SunamoDotnetCmdBuilder
 
+## Short description
+
+Generování příkazů pro nástroj dotnet.
+
+
 Command generation with dotnet tool
 
 ## Overview
