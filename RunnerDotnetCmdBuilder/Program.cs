@@ -1,4 +1,3 @@
-// variables names: ok
 // Runner program for testing SunamoDotnetCmdBuilder library
 namespace RunnerDotnetCmdBuilder;
 
