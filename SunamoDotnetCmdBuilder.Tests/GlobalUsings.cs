@@ -1,5 +1,4 @@
 // variables names: ok
-// EN: Global using directives for SunamoDotnetCmdBuilder.Tests project
-// CZ: Globální using direktivy pro projekt SunamoDotnetCmdBuilder.Tests
+// Global using directives for SunamoDotnetCmdBuilder.Tests project
 global using Xunit;
 global using SunamoDotnetCmdBuilder;

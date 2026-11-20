@@ -1,6 +1,5 @@
 // variables names: ok
-// EN: Runner program for testing SunamoDotnetCmdBuilder library
-// CZ: Runner program pro testování knihovny SunamoDotnetCmdBuilder
+// Runner program for testing SunamoDotnetCmdBuilder library
 namespace RunnerDotnetCmdBuilder;
 
 internal class Program
